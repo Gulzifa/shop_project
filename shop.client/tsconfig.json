@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ESNext",
+        "jsx": "react-jsx",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "paths": {
+            "@Shared/*": [
+                "./Shared/*"
+            ]
+        },
+        "typeRoots": ["Shared"]
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+   
+}

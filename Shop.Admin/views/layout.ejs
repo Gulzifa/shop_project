@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>SHOP PROJECT</title>
+    <link rel="stylesheet" href="/<%= process.env.ADMIN_PATH %>/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"></div>
+    </header>
+
+    <div>         
+        <a href="<%= `/${process.env.ADMIN_PATH}/auth/logout` %>">LOGOUT</a>
+
+        <% if (isAdmin) { %>
+        <a href="<%= `/${process.env.ADMIN_PATH}/new-product` %>">ADD PRODUCT</a>
+        <% } %>
+    </div>
+
+    <div class="container">
+        <%- body %>
+    </div>
+</body>
+
+</html>

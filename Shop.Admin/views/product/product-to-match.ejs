@@ -1,0 +1,16 @@
+<div class="product-to-match">
+    <h2><%= product.title %></h2>
+    <div class="product-info">
+      <span class="label">Price:</span>
+      <%= product.price %>
+    </div>
+    <div class="match-mark">
+      <label for="<%= product.id %>">Mark to match with this product</label>
+      <input
+        type="checkbox"
+        id="<%= product.id %>"
+        value="<%= product.id %>"
+        name= "productsToMatch"
+      />
+    </div>
+  </div>

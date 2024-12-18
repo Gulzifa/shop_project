@@ -1,0 +1,24 @@
+<h1>Create new product</h1>
+<form action="<%= `new-product` %>" method="post" class="product-add-form">
+  <div class="product-add-fields">
+    <div class="field">
+      <label for="item-title">Title:</label>
+      <input id="item-title"  type="text" name="title" required/>
+    </div>
+
+    <div class="field">
+      <label for="item-description">Description:</label>
+      <textarea id="item-description" rows="3" name="description" required>
+        </textarea>
+    </div>
+
+    <div class="field">
+      <label for="item-price">Price:</label>
+      <input id="item-price" type="text" name="price" required/>
+    </div>
+
+    
+  <div class="product-edit-footer">
+    <button type="submit">Save changes</button>
+    </div>
+</form>
